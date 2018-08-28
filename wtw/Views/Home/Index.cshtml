@@ -1,0 +1,235 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Content-->
+<div class="md-content">
+
+    <!-- slider -->
+    <div class="slider">
+
+        <!-- carousel__element owl-carousel -->
+        <div class="carousel__element owl-carousel" data-options='{"items":1,"loop":true,"dots":false,"nav":false,"margin":0, "autoplay": true, "autoplayTimeout": 3000}'>
+            <div class="slider__item" style="background-image: url('/assets/img/slider-0.jpg');background-size:cover">
+                <div class="md-tb">
+                    <div class="md-tb__cell">
+                        <div class="slider__content">
+                            <div class="container">
+                                <h2>Save life over saving time</h2>
+                                <p>TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item" style="background-image: url('/assets/img/slider-2.jpg');background-size:cover">
+                <div class="md-tb">
+                    <div class="md-tb__cell">
+                        <div class="slider__content">
+                            <div class="container">
+                                <h2>Walk with us</h2>
+                                <p>We help young people become safe and independent user on road and transport.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End / carousel__element owl-carousel -->
+
+    </div><!-- End / slider -->
+    <!-- Service-->
+    <!-- Section -->
+    <section class="md-section" style="background-color:#f7f7f7;padding:0;">
+        <div class="container">
+            <div class="textbox-group">
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 ">
+
+                        <!-- textbox -->
+                        <div class="textbox">
+                            <div class="textbox__image"><a href=""><img src="/assets/img/services/5.jpg" alt="" /></a></div>
+                            <div class="textbox__body">
+                                <h2 class="textbox__title"><a href="@Url.Action("Statistics","Home")">Statistics</a></h2>
+                                <div class="textbox__description">Visualize road user data</div>
+                            </div>
+                        </div><!-- End / textbox -->
+
+                    </div>
+                    <div class="col-md-4 col-lg-4 ">
+
+                        <!-- textbox -->
+                        <div class="textbox">
+                            <div class="textbox__image"><a href="#"><img src="/assets/img/services/7.jpg" alt="" /></a></div>
+                            <div class="textbox__body">
+                                <h2 class="textbox__title"><a href="#">Navigation</a></h2>
+                                <div class="textbox__description">Navigate you a safe rounte</div>
+                            </div>
+                        </div><!-- End / textbox -->
+
+                    </div>
+                    <div class="col-md-4 col-lg-4 ">
+
+                        <!-- textbox -->
+                        <div class="textbox">
+                            <div class="textbox__image"><a href="#"><img src="/assets/img/services/1.jpg" alt="" /></a></div>
+                            <div class="textbox__body">
+                                <h2 class="textbox__title"><a href="#">Forum</a></h2>
+                                <div class="textbox__description">Share your story on road</div>
+                            </div>
+                        </div><!-- End / textbox -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End / Section -->
+    
+    <!-- About-->
+    <!-- Section -->
+    <section class="md-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 ">
+
+                    <!-- title-01 -->
+                    <div class="title-01 title-01__style-03 md-text-left">
+                        <h6 class="title-01__subTitle">about</h6>
+                        <h2 class="title-01__title">We Help Young People As Best As We Can</h2>
+                        <div>Show something here</div>
+                    </div><!-- End / title-01 -->
+
+                    <div class="row">
+                        <div class="col-sm-4 ">
+
+                            <!-- box-number -->
+                            <div class="box-number">
+                                <div class="box-number__number">
+                                    <h2 class="js-counter" data-counter-time="2000" data-counter-delay="10">99</h2>
+                                </div>
+                                <div class="box-number__description">Website Visits</div>
+                            </div><!-- End / box-number -->
+
+                        </div>
+                        <div class="col-sm-4 ">
+
+                            <!-- box-number -->
+                            <div class="box-number">
+                                <div class="box-number__number">
+                                    <h2 class="js-counter" data-counter-time="2000" data-counter-delay="10">1200</h2>
+                                </div>
+                                <div class="box-number__description">Forum Messages</div>
+                            </div><!-- End / box-number -->
+
+                        </div>
+                        <div class="col-sm-4 ">
+
+                            <!-- box-number -->
+                            <div class="box-number">
+                                <div class="box-number__number">
+                                    <h2 class="js-counter" data-counter-time="2000" data-counter-delay="10">15</h2>
+                                </div>
+                                <div class="box-number__description">Awards</div>
+                            </div><!-- End / box-number -->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="js-consult-slider">
+
+                        <!-- carousel__element owl-carousel -->
+                        <div class="carousel__element owl-carousel" data-options='{"items":1,"loop":true,"dots":false,"nav":false,"margin":30,"responsive":{"0":{"items":2},"576":{"items":3},"992":{"items":1}}}'>
+                            <div class="image-full"><img src="/assets/img/image-03.jpg" alt=""></div>
+                            <div class="image-full"><img src="/assets/img/image-03.jpg" alt=""></div>
+                        </div><!-- End / carousel__element owl-carousel -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End / Section -->
+    <!-- Contact us-->
+    <!-- Section -->
+    <section class="md-section md-skin-dark js-consult-form" style="background-image:url('/assets/img/backgrounds/1.jpg');">
+        <div class="md-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-0 offset-sm-0 offset-md-0 offset-lg-2 ">
+
+                    <!-- title-01 -->
+                    <div class="title-01 title-01__style-02">
+                        <h2 class="title-01__title">Contact With Us</h2>
+                        <div>email</div>
+                    </div><!-- End / title-01 -->
+
+                    <div class="consult-phone">techbess@gmail.com</div>
+                </div>
+            </div>
+
+            <!-- form-01 -->
+            <div class="form-01 consult-form js-consult-form__content">
+                <h2 class="form-01__title">Give Us Your Feedback</h2>
+                <form class="form-01__form">
+                    <div class="form__item form__item--03">
+                        <input type="text" name="name" placeholder="Your name" />
+                    </div>
+                    <div class="form__item form__item--03">
+                        <input type="text" name="phone" placeholder="Your Email" />
+                    </div>
+                    <div class="form__item form__item--03">
+                        <input type="email" name="email" placeholder="Your Email" />
+                    </div>
+                    <div class="form__item">
+                        <textarea rows="3" name="Your message" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="form__button">
+                        <a class="btn btn-primary btn-w180" href="#">send message</a>
+                    </div>
+                </form>
+            </div><!-- End / form-01 -->
+
+        </div>
+    </section>
+    <!-- End / Section -->
+    
+    <!-- Our partner-->
+    <!-- Section -->
+    <section class="md-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-8 offset-0 offset-sm-0 offset-md-2 offset-lg-2 ">
+
+                    <!-- title-01 -->
+                    <div class="title-01">
+                        <h2 class="title-01__title">Our Partner</h2>
+                    </div><!-- End / title-01 -->
+
+                </div>
+            </div>
+
+            <!-- carousel__element owl-carousel -->
+            <div class="carousel__element owl-carousel" data-options='{"loop":true,"dots":false,"nav":true,"margin":30,"responsive":{"0":{"items":2},"768":{"items":3},"992":{"items":3}}}'>
+
+                <!--  -->
+                <div>
+                    <div class="brand-01__image"><img src="/assets/img/brands/1.png" alt="" /></div>
+                </div><!-- End /  -->
+                <!--  -->
+                <div>
+                    <div class="brand-01__image"><img src="/assets/img/brands/2.png" alt="" /></div>
+                </div><!-- End /  -->
+                <!--  -->
+                <div>
+                    <div class="brand-01__image"><img src="/assets/img/brands/3.png" alt="" /></div>
+                </div><!-- End /  -->
+                <!--  -->
+
+            </div><!-- End / carousel__element owl-carousel -->
+        </div>
+    </section>
+    <!-- End / Section -->
+</div>
+<!-- End / Content-->

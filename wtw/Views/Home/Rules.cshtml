@@ -1,0 +1,131 @@
+﻿
+@{
+    ViewBag.Title = "Rules";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div style="width:auto;height:8em">
+    <img src="~/assets/img/blackbar.png" style="background-size:cover" />
+</div>
+
+<!-- Content-->
+<div class="md-content">
+    <!-- page-title -->
+    <div class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-0 offset-sm-0 offset-md-0 offset-lg-2 ">
+                    <h2 class="page-title__title">@ViewBag.Title</h2>
+
+                    <!--  -->
+                    <nav>
+                        <a class="breadcrumb__item" href="@Url.Action("Index","Home")">Home</a><span class="breadcrumb__item active">@ViewBag.Title</span>
+                    </nav><!-- End /  -->
+
+                </div>
+            </div>
+        </div>
+        <section class="md-section">
+            <div class="container">
+                <div class="container tm-container">
+                    <div class="tm-page-content">
+                        <!-- #home -->
+                        <section id="tm-section-1" class="row tm-section">
+                            <div class="tm-white-curve-left col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-6">
+                                <div class="tm-white-curve-left-rec"></div>
+                                <div class="tm-white-curve-left-circle"></div>
+                                <div class="tm-white-curve-text">
+                                    <h2 class="tm-section-header blue-text">Do's and Dont's on road</h2>
+                                    <p> </p>
+                                    <h4 class="tm-section-header gray-text">Pedestrians are not allowed to:</h4>
+                                    <p class="thin-font">
+                                        • cross the road if they are facing an amber or red traffic or pedestrian light.
+                                        <br>
+                                        • cross the road within 20 meters of a pedestrian crossing - they must use the crossing.
+                                        <br>
+                                        • get out of moving vehicles.
+                                        <br>
+                                        • cross a railway level crossing when it is not allowed.
+                                        <br>
+                                        • walk along, or fail to give way when crossing, a path which is for bicycles and wheeled devices (a path showing a 'Bicycle lane' sign).
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tm-home-right col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-6">
+                                <h4 class="tm-section-header">Pedestrians must:</h4>
+                                <p class="thin-font">
+                                    • use the shortest or most direct way to cross the road.
+                                    <br>
+                                    • cross to the nearest edge of the road after getting off a tram.
+                                    <br>
+                                    • obey traffic instructions from a police officer.
+                                    <br>
+                                    • give way to vehicles at roundabouts.
+                                    <br>
+                                    • obey a 'no pedestrian' sign.
+                                </p>
+                            </div>
+
+                        </section> <!-- #home -->
+                        <!-- #services -->
+                        <section id="tm-section-2" class="row tm-section">
+                            <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
+                                <img src="/assets/img/rules/strip-01.jpg" alt="Image" class="img-fluid tm-img">
+                            </div>
+                            <div class="tm-white-curve-right col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
+
+                                <div class="tm-white-curve-right-circle"></div>
+                                <div class="tm-white-curve-right-rec"></div>
+
+                                <div class="tm-white-curve-text">
+                                    <h2 class="tm-section-header red-text">Safe crossing procedure</h2>
+                                    <p><strong>STOP</strong></p>
+                                    <p class="thin-font">one step back from the kerb or shoulder of the road if there is no footpath. </p>
+                                    <p><strong>LOOK</strong></p>
+                                    <p class="thin-font">in all directions for approaching traffic.</p>
+                                    <p><strong>LISTEN</strong></p>
+                                    <p class="thin-font">in all directions for approaching traffic.</p>
+                                    <p><strong>THINK</strong></p>
+                                    <p class="thin-font">about whether it is safe to cross the road – when the road is clear or all traffic has stopped.</p>
+                                </div>
+
+                            </div>
+                        </section> <!-- #services -->
+                        <!-- #about -->
+                        <section id="tm-section-3" class="row tm-section">
+                            <div class="tm-white-curve-left col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
+                                <div class="tm-white-curve-left-rec">
+
+                                </div>
+                                <div class="tm-white-curve-left-circle">
+
+                                </div>
+                                <div class="tm-white-curve-text">
+                                    <h2 class="tm-section-header gray-text">Intersection lights</h2>
+                                    <p>
+                                        • A <b style="color: green">green</b> man means you can cross, if it is safe to do so.
+                                        <br>
+                                        • A flashing <b style="color: red">red</b> man means you can continue to cross but should not start crossing.
+                                        <br>
+                                        • A steady <b style="color: red">red</b> man means do not start to cross - wait for the <b style="color: green">green</b> man before beginning to cross.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
+                                <img src="/assets/img/rules/strip-02.jpg" alt="Image" class="img-fluid tm-img">
+                            </div>
+                        </section> <!-- #about -->
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="md-section">
+            <div class="text-center"><a class="btn btn-primary btn-w180" href="#">Load more</a></div>
+        </section>
+    </div><!-- End / page-title -->
+</div>
+<!-- End / Content-->
+
+
