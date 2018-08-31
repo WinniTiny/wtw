@@ -3,6 +3,67 @@
     ViewBag.Title = "Statistics";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<head>
+    <style type="text/css">
+        .grid-container {
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1.25fr 3.1fr 0.1fr 1.2fr 1.25fr;
+            grid-template-rows: 0.1fr 1fr 0.3fr 1fr 0.5fr 1fr;
+            grid-gap: 1px 1px;
+            grid-template-areas: ". header1 header1 header1 ." ". chart-overall chart-overall chart-overall ." ". header2 header2 header2 ." ". chart-overall-search . chart-overall-searchbar ." ". header3 header3 header3 ." ;
+        }
+
+        .header1 {
+            grid-area: header1;
+        }
+
+        .chart-overall {
+            grid-area: chart-overall;
+        }
+
+        .header2 {
+            grid-area: header2;
+        }
+
+        .chart-overall-search {
+            grid-area: chart-overall-search;
+        }
+
+        .chart-overall-searchbar {
+            grid-area: chart-overall-searchbar;
+        }
+
+        .header3 {
+            grid-area: header3;
+        }
+
+        .chart-map {
+            grid-area: chart-map;
+        }
+
+        /* set the CSS */
+
+        .bar {
+            fill: steelblue;
+        }
+    </style>
+
+    <style>
+        /* set the CSS */
+
+        .bar {
+            fill: steelblue;
+        }
+    </style>
+
+    <link href="/assets/css/stat-bubble.css" rel="stylesheet" type="text/css" />
+    <!-- js-->
+    <!-- load the d3.js library -->
+    <!--End / js-->
+</head>
+
 <div style="width:auto;height:8em">
     <img src="~/assets/img/blackbar.png" style="background-size:cover" />
 </div>
@@ -25,8 +86,54 @@
             </div>
         </div>
         <section class="md-section">
+            <div class="grid-container">
+                <div class="header1">
+                    <hr />
+                    <div style="margin:2em"></div>
+                    <h3>Why we focus on young people?</h3>
+                    <h5>Description on reasons</h5>
+                </div>
+                <div class="chart-overall" id="mainBubble" style="align-items:center">
+                </div>
+
+                <div class="header2">
+                    <hr />
+                    <div style="margin:2em"></div>
+                    <h3>Top 5 dengerous suburbs and your suburb</h3>
+                </div>
+                <div class="chart-overall-search" id="inputbarchart">
+                </div>
+                <div class="chart-overall-searchbar">
+                    <strong>Your Postcode</strong>
+                    <input style="border:groove" id="txtNumber" placeholder="4 number only" onkeypress="return isNumberKey(event)" type="text" name="txtNumber" maxlength="4">
+                    <button type="button" class="btn btn-primary" onclick="searchmysuburb()">Search</button>
+                    <span id="output" class="label label-primary" hidden="hidden"></span>
+                </div>
+                <div class="header3">
+                    <hr />
+                    <div style="margin:2em"></div>
+                    <h3>Death and injury number for suburbs on map</h3>
+                </div>
+            </div>
+
+        </section>
+        <section style="align-content:center">
+            <div class='tableauPlaceholder' id='viz1535573378267' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book-pedestrain&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book-pedestrain&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book-pedestrain&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>
+            <script type='text/javascript'>var divElement = document.getElementById('viz1535573378267'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.maxWidth = '650px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; vizElement.style.maxHeight = '460px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+        </section>
+        <section class="md-section">
             <div class="text-center"><a class="btn btn-primary btn-w180" href="#">Load more</a></div>
         </section>
+        
     </div><!-- End / page-title -->
 </div>
 <!-- End / Content-->
+<!-- js-->
+<!-- load the d3.js library -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="/assets/js/stat-bubble.js"></script>
+<script src="/assets/js/validator.js"></script>
+<script src="/assets/js/inputbarchart.js"></script>
+
+<!--End / js-->
