@@ -34,7 +34,7 @@ namespace wtw.Controllers
             return View();
         }
 
-        public ActionResult Forum()
+        public ActionResult Rewards()
         {
             ViewBag.Message = "Your application description page.";
 
