@@ -61,7 +61,7 @@ function searchmysuburb() {
     var tem_count;
     var tem_suburb;
 
-    svg1.selectAll('line').remove();
+    //svg1.selectAll('line').remove();
 
     val_search = document.getElementById("txtNumber").value;
     d3.csv("/assets/data/header2.csv", function (error, data) {
@@ -76,8 +76,16 @@ function searchmysuburb() {
                 tem_suburb = d.Suburb;
 
                 document.getElementById("output").textContent = d.Count; 
-
-                
+                svg1.selectAll('line').remove();
+                var line = svg1.append("line")
+                    .attr("id", "line1")
+                    .attr("x1", 0)
+                    .attr("y1", (3100 - parseInt(document.getElementById("output").textContent)) / 6.9999999)
+                    .attr("x2", 800)
+                    .attr("y2", (3100 - parseInt(document.getElementById("output").textContent)) / 6.9999999)
+                    .attr("stroke", "purple")
+                    .attr("stroke-width", 10)
+                    .attr("marker-end", "url(#arrow)");
             }
         });
     });
@@ -88,13 +96,5 @@ function searchmysuburb() {
     // append the rectangles for the bar chart
     //d3.select("the_SVG_ID").remove();(3100 - tem_count)/5.5
 
-    var line = svg1.append("line")
-        .attr("id","line1")
-        .attr("x1", 0)
-        .attr("y1", (3100 - parseInt(document.getElementById("output").textContent)) / 6.5)
-        .attr("x2", 800)
-        .attr("y2", (3100 - parseInt(document.getElementById("output").textContent)) / 6.5)
-        .attr("stroke", "purple")
-        .attr("stroke-width", 2)
-        .attr("marker-end", "url(#arrow)");
+    
 }

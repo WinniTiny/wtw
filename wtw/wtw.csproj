@@ -209,6 +209,7 @@
   <ItemGroup>
     <Content Include="assets\css\main.css" />
     <Content Include="assets\css\stat-bubble.css" />
+    <Content Include="assets\data\year-postcode.csv" />
     <Content Include="assets\fonts\fontawesome\font-awesome.min.css" />
     <Content Include="assets\fonts\fontawesome\fonts\fontawesome-webfont.svg" />
     <Content Include="assets\fonts\themify-icons\fonts\themify.svg" />
@@ -280,12 +281,17 @@
     <Content Include="assets\img\slider-1.jpg" />
     <Content Include="assets\img\slider-2.jpg" />
     <Content Include="assets\img\slider.jpg" />
+    <Content Include="assets\js\charts.js" />
+    <Content Include="assets\vendors\charts\echarts.js" />
     <Content Include="assets\js\inputbarchart.js" />
     <Content Include="assets\js\main.js" />
     <Content Include="assets\js\stat-bubble.js" />
     <Content Include="assets\js\validator.js" />
     <Content Include="assets\vendors\bootstrap4\bootstrap-grid.css" />
     <Content Include="assets\vendors\bootstrap4\bootstrap-grid.min.css" />
+    <Content Include="assets\vendors\charts\echarts.min.js" />
+    <Content Include="assets\vendors\charts\theme\shine.js" />
+    <Content Include="assets\vendors\charts\theme\vintage.js" />
     <Content Include="assets\vendors\imagesloaded\imagesloaded.pkgd.js" />
     <Content Include="assets\vendors\imagesloaded\imagesloaded.pkgd.min.js" />
     <Content Include="assets\vendors\isotope-layout\isotope.pkgd.js" />
