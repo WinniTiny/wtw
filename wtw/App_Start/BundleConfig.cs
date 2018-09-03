@@ -36,7 +36,9 @@ namespace wtw
                     "~/assets/vendors/jquery.waypoints/jquery.waypoints.min.js",
                     "~/assets/vendors/menu/menu.min.js",
                     "~/assets/vendors/smoothscroll/SmoothScroll.min.js",
-                    "~/assets/js/main.js"
+                    "~/assets/js/main.js",
+                    "~/assets/vendors/bootstrap4/js/bootstrap.min.js",
+                    "~/assets/vendors/bootstrap4/js/bootstrap.js"
                     ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
@@ -47,7 +49,9 @@ namespace wtw
                       "~/assets/vendors/magnific-popup/magnific-popup.min.css",
                       "~/assets/vendors/owl.carousel/owl.carousel.css",
                       "~/assets/vendors/_jquery/jquery.min.css",
-                      "~/assets/vendors/bootstrap4/bootstrap-grid.css"));
+                      "~/assets/vendors/bootstrap4/bootstrap-grid.css",
+                      "~/assets/vendors/bootstrap4/bootstrap.css",
+                      "~/assets/vendors/bootstrap4/bootstrap-min.css"));
         }
     }
 }

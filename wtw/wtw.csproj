@@ -282,6 +282,13 @@
     <Content Include="assets\img\slider-2.jpg" />
     <Content Include="assets\img\slider.jpg" />
     <Content Include="assets\js\charts.js" />
+    <Content Include="assets\js\navigation.js" />
+    <Content Include="assets\vendors\bootstrap4\bootstrap.css" />
+    <Content Include="assets\vendors\bootstrap4\bootstrap.min.css" />
+    <Content Include="assets\vendors\bootstrap4\js\bootstrap.bundle.js" />
+    <Content Include="assets\vendors\bootstrap4\js\bootstrap.bundle.min.js" />
+    <Content Include="assets\vendors\bootstrap4\js\bootstrap.js" />
+    <Content Include="assets\vendors\bootstrap4\js\bootstrap.min.js" />
     <Content Include="assets\vendors\charts\echarts.js" />
     <Content Include="assets\js\inputbarchart.js" />
     <Content Include="assets\js\main.js" />
@@ -353,6 +360,10 @@
     <Content Include="assets\data\123.csv" />
     <Content Include="assets\data\header2_top5.csv" />
     <Content Include="assets\data\test.csv" />
+    <Content Include="assets\vendors\bootstrap4\js\bootstrap.bundle.js.map" />
+    <Content Include="assets\vendors\bootstrap4\js\bootstrap.bundle.min.js.map" />
+    <Content Include="assets\vendors\bootstrap4\js\bootstrap.js.map" />
+    <Content Include="assets\vendors\bootstrap4\js\bootstrap.min.js.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
