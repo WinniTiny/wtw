@@ -216,7 +216,7 @@ function searchmysuburb() {
                 tem_count = d.Count;
                 tem_postcode = d.Postcode;
                 tem_suburb = d.Suburb;
-                myChart.setOption(option);
+                //myChart.setOption(option);
                 myChart = echarts.init(dom, 'vintage');
 
                 option = {
@@ -303,10 +303,75 @@ function searchmysuburb() {
                     ]
                 };
                 myChart.setOption(option);
+
+                return;
             }
         });
     });
 
 
+    //var name = params.name;
+    //var value = params.value;
+    var arraycounts = new Array();
+
+    d3.csv("/assets/data/year-postcode.csv", function (error, data) {
+        data.forEach(function (d) {
+            if (d.postcode == val_search) {
+                arraycounts.push(d.year2006);
+                arraycounts.push(d.year2007);
+                arraycounts.push(d.year2008);
+                arraycounts.push(d.year2009);
+                arraycounts.push(d.year2010);
+                arraycounts.push(d.year2011);
+                arraycounts.push(d.year2012);
+                arraycounts.push(d.year2013);
+                arraycounts.push(d.year2014);
+                arraycounts.push(d.year2015);
+                arraycounts.push(d.year2016);
+                arraycounts.push(d.year2017);
+                arraycounts.push(d.year2018);
+
+                //var myChart1 = echarts.init(document.getElementById("linechart"), 'shine');
+
+                option = {
+                    title: {
+                        text: d.suburb,
+                        textStyle: {
+                            color: "green",
+                            padding: 5,
+                            align: 'right',
+                            shadowColor: 'rgba(0, 0, 0, 0.5)',
+                            shadowBlur: 10,
+                        }
+                    },
+                    tooltip: {
+                        trigger: 'axis'
+                    },
+                    xAxis: {
+                        type: 'category',
+                        data: ['2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018']
+                    },
+                    yAxis: {
+                        type: 'value'
+                    },
+                    series: [{
+                        data: [arraycounts[0], arraycounts[1], arraycounts[2], arraycounts[3], arraycounts[4], arraycounts[5], arraycounts[6], arraycounts[7], arraycounts[8], arraycounts[9], arraycounts[10], arraycounts[11], arraycounts[12]],
+                        type: 'line'
+                    }]
+                };
+
+                myChart1.setOption(option);
+
+                return;
+            }
+        });
+    });
 }
 
+var input = document.getElementById("txtNumber");
+input.addEventListener("keyup", function (event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("searchButton").click();
+    }
+});
